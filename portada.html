@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/juego.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <h1> Juego del Mar </h1>
+    <div>
+        <h2>Vida del jugador: <a id="vidajugador"></a> </h2>
+    </div>
+    <div>
+        <h2>Vida de la CPU: <a id="vidacpu"></a> </h2>
+    </div> 
+
+    <select name="ataques" id="ataque_seleccionado" multiple>
+        <option value="Medusa">Medusa</option>
+        <option value="Pulpo">Pulpo</option>
+        <option value="Tiburon">Tiburon</option>
+    </select>
+    <select name="defensas" id="defensa_seleccionado" multiple>
+        <option value="Agua">Agua</option>
+        <option value="Fuego">Fuego</option>
+        <option value="Electricidad">Electrico</option>
+    </select>
+
+    <button onclick="hacerJugada()">Enviar Jugada</button>
+   
+    <audio autoplay loop preload="auto" src="ringtones-super-mario-bros.mp3"></audio>
+
+  
+    <center>
+ <a href="index.html"><button class="button">Volver</button>
+</a>
+</center>
+</body>
+</html>

@@ -1,0 +1,90 @@
+body{
+    background-image: url(Sirena1111.jpg);
+    background-repeat: no-repeat;
+    background-size: 1350px;
+    background-position: top;
+}
+ 
+.body2{
+    background-image: url(S\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: 1350px;
+    background-position: top;
+}
+
+.button {
+    background-color: aqua;
+}
+
+.ataque1 {
+    background-color: brown;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+  
+.flex-container > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+
+h2, h1 {
+    color: #f1f1f1;
+}
+
+
+#ataque_seleccionado {
+    height: 44px;
+    border: none;
+    overflow: hidden;
+  }
+  #ataque_seleccionado::-moz-focus-inner {
+    border: 0;
+  }
+  #ataque_seleccionado:focus {
+    outline: none;
+  }
+  #ataque_seleccionado option{
+    width: 60px;
+    font-size: 1.2em;
+    padding: 10px 0;
+    text-align: center;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    border:rgb(204, 204, 0) solid 1px;
+    border-radius: 5px;
+    color: rgb(204, 204, 0);
+  }
+
+
+  #defensa_seleccionado {
+    height: 44px;
+    border: none;
+    overflow: hidden;
+  }
+  #defensa_seleccionado::-moz-focus-inner {
+    border: 0;
+  }
+  #defensa_seleccionado:focus {
+    outline: none;
+  }
+  #defensa_seleccionado option{
+    width: 60px;
+    font-size: 1.2em;
+    padding: 10px 0;
+    text-align: center;
+    margin-right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    border:rgb(204, 204, 0) solid 1px;
+    border-radius: 5px;
+    color: rgb(204, 204, 0);
+  }
