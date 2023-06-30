@@ -1,90 +1,126 @@
-body{
-    background-image: url(Sirena1111.jpg);
-    background-repeat: no-repeat;
-    background-size: 1350px;
-    background-position: top;
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+
+body {
+  background-image: url(Sirena1111.jpg);
+  background-repeat: no-repeat;
+  background-size: 1350px;
+  background-position: top;
 }
- 
-.body2{
-    background-image: url(S\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-size: 1350px;
-    background-position: top;
+
+.body2 {
+  background-image: url(S\ \(1\).jpg);
+  background-repeat: no-repeat;
+  background-size: 1350px;
+  background-position: top;
 }
 
 .button {
-    background-color: aqua;
+  background-color: aqua;
 }
 
 .ataque1 {
-    background-color: brown;
+  background-color: brown;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-}
-  
-.flex-container > div {
-    background-color: #f1f1f1;
-    width: 100px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+  display: flex;
+  justify-content: center;
 }
 
-
-h2, h1 {
-    color: #f1f1f1;
+.flex-container>div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
 }
 
 
-#ataque_seleccionado {
-    height: 44px;
-    border: none;
-    overflow: hidden;
-  }
-  #ataque_seleccionado::-moz-focus-inner {
-    border: 0;
-  }
-  #ataque_seleccionado:focus {
-    outline: none;
-  }
-  #ataque_seleccionado option{
-    width: 60px;
-    font-size: 1.2em;
-    padding: 10px 0;
-    text-align: center;
-    margin-right: 20px;
-    display: inline-block;
-    cursor: pointer;
-    border:rgb(204, 204, 0) solid 1px;
-    border-radius: 5px;
-    color: rgb(204, 204, 0);
-  }
+h2,
+h1 {
+  color: #f1f1f1;
+}
 
 
-  #defensa_seleccionado {
-    height: 44px;
-    border: none;
-    overflow: hidden;
-  }
-  #defensa_seleccionado::-moz-focus-inner {
-    border: 0;
-  }
-  #defensa_seleccionado:focus {
-    outline: none;
-  }
-  #defensa_seleccionado option{
-    width: 60px;
-    font-size: 1.2em;
-    padding: 10px 0;
-    text-align: center;
-    margin-right: 20px;
-    display: inline-block;
-    cursor: pointer;
-    border:rgb(204, 204, 0) solid 1px;
-    border-radius: 5px;
-    color: rgb(204, 204, 0);
-  }
+#ataque_seleccionado, #defensa_seleccionado {
+  height: 44px;
+  border: none;
+  overflow: hidden;
+}
+
+#ataque_seleccionado::-moz-focus-inner, #defensa_seleccionado::-moz-focus-inner {
+  border: 0;
+}
+
+#ataque_seleccionado:focus, #defensa_seleccionado:focus {
+  outline: none;
+}
+
+#ataque_seleccionado option, #defensa_seleccionado option {
+  font-size: 1.2em;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 1px;
+  margin-left: 5px;
+  margin-right: 10px;
+  display: inline-block;
+  cursor: pointer;
+  border: rgb(204, 204, 0) solid 1px;
+  border-radius: 5px;
+  color: transparent;
+  background-image: url(medusa.gif);
+}
+
+select#ataque_seleccionado option[value="Medusa"] {
+  background-image: url(medusa.gif);
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  background-position: center;
+}
+
+select#ataque_seleccionado option[value="Pulpo"] {
+  background-image: url(pulpo.jpg);
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  background-position: center;
+}
+
+select#ataque_seleccionado option[value="Tiburon"] {
+  background-image: url(tiburon.gif);
+  background-repeat: no-repeat;
+  background-size: 80px auto;
+  background-position: center;
+}
+
+select#defensa_seleccionado option[value="Agua"] {
+  background-image: url(agua.png);
+  background-repeat: no-repeat;
+  background-size: 60px auto;
+  background-position: center 1px;
+  background-position-x: -15px;
+}
+
+select#defensa_seleccionado option[value="Fuego"] {
+  background-image: url(fuego.png);
+  background-repeat: no-repeat;
+  background-size: 20px auto;
+  background-position: center;
+}
+
+select#defensa_seleccionado option[value="Electricidad"] {
+  background-image: url(electrico.png);
+  background-repeat: no-repeat;
+  background-size: 40px auto;
+  background-position: center;
+}
+
+#mensaje {
+  width: 100%;
+  background: -webkit-linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(196, 22, 137, 1) 46%, rgba(0, 212, 255, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Caprasimo', cursive;
+  font-size: 100px;
+  text-align: center;
+}
